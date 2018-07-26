@@ -88,7 +88,7 @@ auc3=metrics.auc(fpr3,tpr3)
 print(auc3)
 res3=pd.DataFrame({'FP':fpr3,'TP':tpr3,'Cut':thresholds3})
 print(res3.head(10))
-#Virdulize ROC curves and AUC
+#Visualize ROC curves and AUC
 plt.clf()
 fig = plt.figure(figsize=(12, 6))
 plt.plot(fpr1, tpr1,color='darkorange',label='Random Forest (area=%0.2f)'%auc1)
