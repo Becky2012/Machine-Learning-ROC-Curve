@@ -7,12 +7,10 @@ import random
 from sklearn.model_selection import train_test_split,cross_val_predict
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.cross_validation import KFold,cross_val_score
-from sklearn.metrics import accuracy_score,roc_curve,roc_auc_score
+from sklearn.cross_validation import cross_val_score
+from sklearn.metrics import roc_curve
 from sklearn import metrics
 
 clsr_names=["Nearest Neighbors",
